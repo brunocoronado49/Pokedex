@@ -30,7 +30,7 @@ struct PokemonCell: View {
                     .padding(.leading)
                 
                 HStack {
-                    Text(pokemon.type)
+                    Text(pokemon.type.capitalized)
                         .font(.subheadline)
                         .bold()
                         .foregroundColor(.white)
