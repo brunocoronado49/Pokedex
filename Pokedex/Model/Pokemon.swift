@@ -12,10 +12,23 @@ struct Pokemon: Identifiable, Decodable {
     let name: String
     let imageUrl: String
     let type: String
+    let attack: Int
+    let defense: Int
+    let description: String
+    let weight: Int
+    let height: Int
 }
 
 let mock_pokemon: [Pokemon] = [
-    .init(id: 0, name: "Bulbasaur", imageUrl: "Bulbasaur", type: "Poison"),
-    .init(id: 1, name: "Ivysaur", imageUrl: "Bulbasaur", type: "Poison"),
-    .init(id: 2, name: "Venusaur", imageUrl: "Bulbasaur", type: "Poison"),
+    .init(
+        id: 0,
+        name: "Bulbasaur",
+        imageUrl: "Bulbasaur",
+        type: "Poison",
+        attack: 49,
+        defense: 49,
+        description: "desc",
+        weight: 69,
+        height: 7
+    ),
 ]
